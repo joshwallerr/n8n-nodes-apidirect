@@ -81,7 +81,7 @@ export const googlePlacesReviewsFields: INodeProperties[] = [
 				name: "pages",
 				type: "number",
 				default: 1,
-				description: "Number of pages, 1-10 (default: 1). Each page returns up to 10 reviews and is billed as one request. Each page fetched is billed as one request.",
+				description: "Number of pages, 1-10 (default: 1). Each page returns up to 10 reviews and is billed as one request.",
 				routing: {
 					send: {
 						type: "query",

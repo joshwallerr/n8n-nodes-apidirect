@@ -7,7 +7,7 @@ export const twitterTrendsFields: INodeProperties[] = [
 		displayName: "WOEID",
 		name: "woeid",
 		type: "number",
-		default: 1,
+		default: 0,
 		description: "Where On Earth ID for the location. Use 1 for Worldwide.",
 		routing: {
 			send: {

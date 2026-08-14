@@ -69,6 +69,10 @@ export const youtubeVideosFields: INodeProperties[] = [
 				type: "options",
 				options: [
 					{
+						name: "Default",
+						value: "",
+					},
+					{
 						name: "Last Hour",
 						value: "last_hour",
 					},
@@ -89,7 +93,7 @@ export const youtubeVideosFields: INodeProperties[] = [
 						value: "today",
 					},
 				],
-				default: "last_hour",
+				default: "",
 				description: "Filter by upload date: \"last_hour\", \"today\", \"this_week\", \"this_month\", or \"this_year\"",
 				routing: {
 					send: {

@@ -8,7 +8,7 @@ export const instagramUserFields: INodeProperties[] = [
 		name: "username",
 		type: "string",
 		default: "",
-		description: "Instagram username, with or without leading @ (max 100 characters)",
+		description: "Instagram username, with or without leading @ (max 100 characters). Provide exactly one of: Username, URL.",
 		routing: {
 			send: {
 				type: "query",
@@ -27,7 +27,7 @@ export const instagramUserFields: INodeProperties[] = [
 		name: "url",
 		type: "string",
 		default: "",
-		description: "Instagram profile URL, e.g. https://instagram.com/natgeo (max 500 characters)",
+		description: "Instagram profile URL, e.g. https://instagram.com/natgeo (max 500 characters). Provide exactly one of: Username, URL.",
 		routing: {
 			send: {
 				type: "query",

@@ -8,7 +8,7 @@ export const tiktokUserFields: INodeProperties[] = [
 		name: "username",
 		type: "string",
 		default: "",
-		description: "TikTok username, with or without leading @ (max 100 characters)",
+		description: "TikTok username, with or without leading @ (max 100 characters). Provide exactly one of: Username, User ID, URL.",
 		routing: {
 			send: {
 				type: "query",
@@ -27,7 +27,7 @@ export const tiktokUserFields: INodeProperties[] = [
 		name: "userId",
 		type: "string",
 		default: "",
-		description: "Numeric TikTok user ID, as returned by search_tiktok_users",
+		description: "Numeric TikTok user ID, as returned by search_tiktok_users. Provide exactly one of: Username, User ID, URL.",
 		routing: {
 			send: {
 				type: "query",
@@ -46,7 +46,7 @@ export const tiktokUserFields: INodeProperties[] = [
 		name: "url",
 		type: "string",
 		default: "",
-		description: "TikTok profile URL, e.g. https://www.tiktok.com/@tiktok (max 500 characters)",
+		description: "TikTok profile URL, e.g. https://www.tiktok.com/@tiktok (max 500 characters). Provide exactly one of: Username, User ID, URL.",
 		routing: {
 			send: {
 				type: "query",

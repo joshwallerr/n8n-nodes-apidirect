@@ -8,7 +8,7 @@ export const tiktokVideoFields: INodeProperties[] = [
 		name: "url",
 		type: "string",
 		default: "",
-		description: "TikTok video URL, e.g. https://www.tiktok.com/@tiktok/video/7516594811734854943 (max 500 characters)",
+		description: "TikTok video URL, e.g. https://www.tiktok.com/@tiktok/video/7516594811734854943 (max 500 characters). Provide exactly one of: URL, Video ID.",
 		routing: {
 			send: {
 				type: "query",
@@ -27,7 +27,7 @@ export const tiktokVideoFields: INodeProperties[] = [
 		name: "videoId",
 		type: "string",
 		default: "",
-		description: "Numeric TikTok video ID, as returned by search_tiktok",
+		description: "Numeric TikTok video ID, as returned by search_tiktok. Provide exactly one of: URL, Video ID.",
 		routing: {
 			send: {
 				type: "query",

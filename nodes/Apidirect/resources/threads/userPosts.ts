@@ -42,7 +42,7 @@ export const threadsUserPostsFields: INodeProperties[] = [
 				name: "getSentiment",
 				type: "boolean",
 				default: false,
-				description: "Whether to add AI emotion analysis (dominant emotion, polarity, intensity) to each result. Adds $0.001 per page.",
+				description: "Whether to add AI emotion analysis (dominant emotion, polarity, intensity) to each result. Adds $0.001 per request.",
 				routing: {
 					send: {
 						type: "query",

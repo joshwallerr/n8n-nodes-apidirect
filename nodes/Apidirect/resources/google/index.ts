@@ -29,7 +29,7 @@ export const googleDescription: INodeProperties[] = [
 				description: "Send a prompt to Google's AI Mode and get a structured conversational reply with citation links ($0.005 per request)",
 				routing: {
 					request: {
-						method: "GET",
+						method: "POST",
 						url: "/web/ai-mode",
 					},
 				},

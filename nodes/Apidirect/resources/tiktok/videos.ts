@@ -69,27 +69,27 @@ export const tiktokVideosFields: INodeProperties[] = [
 				type: "options",
 				options: [
 					{
-						name: "0",
+						name: "All Time",
 						value: 0,
 					},
 					{
-						name: "1",
-						value: 1,
-					},
-					{
-						name: "180",
+						name: "Last 180 Days",
 						value: 180,
 					},
 					{
-						name: "30",
+						name: "Last 24 Hours",
+						value: 1,
+					},
+					{
+						name: "Last 30 Days",
 						value: 30,
 					},
 					{
-						name: "7",
+						name: "Last 7 Days",
 						value: 7,
 					},
 					{
-						name: "90",
+						name: "Last 90 Days",
 						value: 90,
 					},
 				],

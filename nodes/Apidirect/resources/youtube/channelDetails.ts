@@ -8,7 +8,7 @@ export const youtubeChannelDetailsFields: INodeProperties[] = [
 		name: "id",
 		type: "string",
 		default: "",
-		description: "YouTube channel ID (24 characters, starts with UC)",
+		description: "YouTube channel ID (24 characters, starts with UC). Provide exactly one of: ID, URL, Name.",
 		routing: {
 			send: {
 				type: "query",
@@ -27,7 +27,7 @@ export const youtubeChannelDetailsFields: INodeProperties[] = [
 		name: "url",
 		type: "string",
 		default: "",
-		description: "Channel URL: youtube.com/channel/..., youtube.com/@handle, /c/ or /user/ forms",
+		description: "Channel URL: youtube.com/channel/..., youtube.com/@handle, /c/ or /user/ forms. Provide exactly one of: ID, URL, Name.",
 		routing: {
 			send: {
 				type: "query",
@@ -46,7 +46,7 @@ export const youtubeChannelDetailsFields: INodeProperties[] = [
 		name: "name",
 		type: "string",
 		default: "",
-		description: "Channel name or @handle (e.g. @mkbhd or Linus Tech Tips)",
+		description: "Channel name or @handle (e.g. @mkbhd or Linus Tech Tips). Provide exactly one of: ID, URL, Name.",
 		routing: {
 			send: {
 				type: "query",

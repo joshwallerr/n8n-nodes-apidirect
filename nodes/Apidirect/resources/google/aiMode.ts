@@ -11,7 +11,7 @@ export const googleAiModeFields: INodeProperties[] = [
 		description: "The AI Mode prompt (max 12000 characters)",
 		routing: {
 			send: {
-				type: "query",
+				type: "body",
 				property: "prompt",
 			},
 		},
@@ -45,7 +45,7 @@ export const googleAiModeFields: INodeProperties[] = [
 				description: "2-letter country code (default: \"us\")",
 				routing: {
 					send: {
-						type: "query",
+						type: "body",
 						property: "country",
 					},
 				},
@@ -58,7 +58,7 @@ export const googleAiModeFields: INodeProperties[] = [
 				description: "2-letter language code (default: \"en\")",
 				routing: {
 					send: {
-						type: "query",
+						type: "body",
 						property: "language",
 					},
 				},
@@ -74,7 +74,7 @@ export const googleAiModeFields: INodeProperties[] = [
 				description: "Token from a prior response to continue the conversation",
 				routing: {
 					send: {
-						type: "query",
+						type: "body",
 						property: "session_token",
 					},
 				},

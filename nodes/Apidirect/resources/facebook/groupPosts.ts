@@ -66,8 +66,18 @@ export const facebookGroupPostsFields: INodeProperties[] = [
 			{
 				displayName: "Sort By",
 				name: "sortBy",
-				type: "string",
-				default: "",
+				type: "options",
+				options: [
+					{
+						name: "Most Recent",
+						value: "most_recent",
+					},
+					{
+						name: "Relevance",
+						value: "relevance",
+					},
+				],
+				default: "most_recent",
 				description: "Sort order: most_recent or relevance (default: most_recent)",
 				routing: {
 					send: {

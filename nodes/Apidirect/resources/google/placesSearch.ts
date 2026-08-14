@@ -67,7 +67,7 @@ export const googlePlacesSearchFields: INodeProperties[] = [
 				displayName: "Latitude",
 				name: "lat",
 				type: "number",
-				default: 1,
+				default: 0,
 				description: "Center latitude for geographic bias (use with lng)",
 				routing: {
 					send: {
@@ -80,7 +80,7 @@ export const googlePlacesSearchFields: INodeProperties[] = [
 				displayName: "Longitude",
 				name: "lng",
 				type: "number",
-				default: 1,
+				default: 0,
 				description: "Center longitude for geographic bias (use with lat)",
 				routing: {
 					send: {
@@ -94,7 +94,7 @@ export const googlePlacesSearchFields: INodeProperties[] = [
 				name: "pages",
 				type: "number",
 				default: 1,
-				description: "Number of pages, 1-20 (default: 1). Each page returns up to 10 results and is billed as one request. Each page fetched is billed as one request.",
+				description: "Number of pages, 1-20 (default: 1). Each page returns up to 10 results and is billed as one request.",
 				routing: {
 					send: {
 						type: "query",
