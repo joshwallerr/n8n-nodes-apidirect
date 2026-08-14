@@ -17,7 +17,7 @@
     "reddit",
     "google-search"
   ],
-  "author": { "name": "joshwallerr" },
+  "author": { "name": "joshwallerr", "email": "support@apidirect.io" },
   "repository": {
     "type": "git",
     "url": "https://github.com/joshwallerr/n8n-nodes-apidirect.git"
