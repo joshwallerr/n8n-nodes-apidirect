@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-apidirect",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "n8n community node for API Direct - search and monitor social media, news, and the web (Twitter/X, Facebook, Instagram, TikTok, YouTube, Reddit, Threads, Truth Social, Google)",
   "license": "MIT",
   "homepage": "https://apidirect.io",
@@ -17,12 +17,17 @@
     "reddit",
     "google-search"
   ],
-  "author": { "name": "joshwallerr", "email": "support@apidirect.io" },
+  "author": {
+    "name": "joshwallerr",
+    "email": "support@apidirect.io"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joshwallerr/n8n-nodes-apidirect.git"
   },
-  "publishConfig": { "access": "public" },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "n8n-node build",
     "build:watch": "tsc --watch",
@@ -32,12 +37,18 @@
     "release": "n8n-node release",
     "prepublishOnly": "n8n-node prerelease"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "n8n": {
     "n8nNodesApiVersion": 1,
     "strict": true,
-    "credentials": ["dist/credentials/ApidirectApi.credentials.js"],
-    "nodes": ["dist/nodes/Apidirect/Apidirect.node.js"]
+    "credentials": [
+      "dist/credentials/ApidirectApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Apidirect/Apidirect.node.js"
+    ]
   },
   "devDependencies": {
     "@n8n/node-cli": "*",
@@ -46,5 +57,7 @@
     "release-it": "^19.0.4",
     "typescript": "5.9.2"
   },
-  "peerDependencies": { "n8n-workflow": "*" }
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
 }

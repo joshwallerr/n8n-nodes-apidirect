@@ -1,6 +1,11 @@
 // This file is auto-generated from the API Direct endpoint catalog.
 // Do not edit by hand.
-import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from 'n8n-workflow';
+import {
+	NodeConnectionTypes,
+	type INodePropertyOptions,
+	type INodeType,
+	type INodeTypeDescription,
+} from 'n8n-workflow';
 import { twitterDescription } from './resources/twitter';
 import { facebookDescription } from './resources/facebook';
 import { redditDescription } from './resources/reddit';
@@ -10,6 +15,19 @@ import { threadsDescription } from './resources/threads';
 import { truthsocialDescription } from './resources/truthsocial';
 import { tiktokDescription } from './resources/tiktok';
 import { googleDescription } from './resources/google';
+
+// Platform names, including brand names like Threads that read as plurals
+const resourceOptions: INodePropertyOptions[] = [
+	{ name: "Facebook", value: "facebook" },
+	{ name: "Google", value: "google" },
+	{ name: "Instagram", value: "instagram" },
+	{ name: "Reddit", value: "reddit" },
+	{ name: "Threads", value: "threads" },
+	{ name: "TikTok", value: "tiktok" },
+	{ name: "Truth Social", value: "truthsocial" },
+	{ name: "Twitter", value: "twitter" },
+	{ name: "YouTube", value: "youtube" },
+];
 
 export class Apidirect implements INodeType {
 	description: INodeTypeDescription = {
@@ -35,50 +53,12 @@ export class Apidirect implements INodeType {
 		},
 		properties: [
 			{
-				displayName: "Resource",
-				name: "resource",
-				type: "options",
+				displayName: 'Resource',
+				name: 'resource',
+				type: 'options',
 				noDataExpression: true,
-				options: [
-					{
-						name: "Facebook",
-						value: "facebook",
-					},
-					{
-						name: "Google",
-						value: "google",
-					},
-					{
-						name: "Instagram",
-						value: "instagram",
-					},
-					{
-						name: "Reddit",
-						value: "reddit",
-					},
-					{
-						// eslint-disable-next-line n8n-nodes-base/node-param-resource-with-plural-option
-						name: "Threads",
-						value: "threads",
-					},
-					{
-						name: "TikTok",
-						value: "tiktok",
-					},
-					{
-						name: "Truth Social",
-						value: "truthsocial",
-					},
-					{
-						name: "Twitter",
-						value: "twitter",
-					},
-					{
-						name: "YouTube",
-						value: "youtube",
-					},
-				],
-				default: "twitter",
+				options: resourceOptions,
+				default: 'twitter',
 			},
 			...twitterDescription,
 			...facebookDescription,

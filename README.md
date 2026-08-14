@@ -63,4 +63,5 @@ Requires n8n 1.94.0 or later. Developed and tested against n8n 1.x (2026).
 
 ## Version history
 
+- **0.1.1** — Package-scanner compliance fix.
 - **0.1.0** — Initial release: 9 resources, 58 operations, API-key credential with test, sentiment analysis fields, AI-agent-tool support.
