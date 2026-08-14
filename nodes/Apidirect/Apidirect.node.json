@@ -2,7 +2,10 @@
 	"node": "n8n-nodes-apidirect",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
-	"categories": ["Marketing", "Data & Storage"],
+	"categories": [
+		"Marketing",
+		"Data & Storage"
+	],
 	"resources": {
 		"credentialDocumentation": [
 			{
@@ -11,7 +14,7 @@
 		],
 		"primaryDocumentation": [
 			{
-				"url": "https://apidirect.io/docs/introduction"
+				"url": "https://apidirect.io/docs/n8n"
 			}
 		]
 	}
