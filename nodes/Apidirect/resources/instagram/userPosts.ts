@@ -1,0 +1,82 @@
+// This file is auto-generated from the API Direct endpoint catalog.
+// Do not edit by hand.
+import type { INodeProperties } from 'n8n-workflow';
+
+export const instagramUserPostsFields: INodeProperties[] = [
+	{
+		displayName: "URL",
+		name: "url",
+		type: "string",
+		default: "",
+		description: "Instagram profile URL, e.g. https://instagram.com/natgeo (max 500 characters)",
+		routing: {
+			send: {
+				type: "query",
+				property: "url",
+			},
+		},
+		displayOptions: {
+			show: {
+				resource: ["instagram"],
+				operation: ["userPosts"],
+			},
+		},
+	},
+	{
+		displayName: "Username",
+		name: "username",
+		type: "string",
+		default: "",
+		description: "Instagram username, with or without leading @ (max 100 characters)",
+		routing: {
+			send: {
+				type: "query",
+				property: "username",
+			},
+		},
+		displayOptions: {
+			show: {
+				resource: ["instagram"],
+				operation: ["userPosts"],
+			},
+		},
+	},
+	{
+		displayName: "Pages",
+		name: "pages",
+		type: "number",
+		default: 1,
+		description: "Number of pages to fetch, 1-10 (default: 1). Each page returns up to 12 posts. Each page fetched is billed as one request.",
+		routing: {
+			send: {
+				type: "query",
+				property: "pages",
+			},
+		},
+		displayOptions: {
+			show: {
+				resource: ["instagram"],
+				operation: ["userPosts"],
+			},
+		},
+	},
+	{
+		displayName: "Get Sentiment",
+		name: "getSentiment",
+		type: "boolean",
+		default: false,
+		description: "Whether to add AI emotion analysis (dominant emotion, polarity, intensity) to each result. Adds $0.001 per page.",
+		routing: {
+			send: {
+				type: "query",
+				property: "get_sentiment",
+			},
+		},
+		displayOptions: {
+			show: {
+				resource: ["instagram"],
+				operation: ["userPosts"],
+			},
+		},
+	},
+];
