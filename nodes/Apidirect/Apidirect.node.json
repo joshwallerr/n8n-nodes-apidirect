@@ -1,9 +1,9 @@
 {
-	"node": "n8n-nodes-apidirect",
+	"node": "n8n-nodes-apidirect.apidirect",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": [
-		"Marketing",
+		"Marketing & Content",
 		"Data & Storage"
 	],
 	"resources": {

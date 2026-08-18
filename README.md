@@ -63,6 +63,7 @@ Requires n8n 1.94.0 or later. Developed and tested against n8n 1.x (2026).
 
 ## Version history
 
+- **0.1.3** — Codex metadata fixes requested by n8n review (fully-qualified node identifier, valid category names).
 - **0.1.2** — Audit fixes: AI Mode now uses POST (supports full 12k-char prompts), Facebook sort options are dropdowns, clearer TikTok publish-time labels, neutral defaults for optional filters, corrected billing wording.
 - **0.1.1** — Package-scanner compliance fix.
 - **0.1.0** — Initial release: 9 resources, 58 operations, API-key credential with test, sentiment analysis fields, AI-agent-tool support.
