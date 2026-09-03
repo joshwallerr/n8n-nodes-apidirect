@@ -20,13 +20,13 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 
 ## Operations
 
-One node, ten resources, 64 operations:
+One node, ten resources, 73 operations:
 
 | Resource | Operations |
 |---|---|
 | **Twitter/X** | Search Posts, Search Users, User Profile, User Tweets, User Followers, User Following, Verified Followers, User Replies, Tweet Details, Tweet Retweets, Tweet Quotes, Tweet Comments, Trends |
 | **Facebook** | Page Details, Page Posts, Page Photos, Page Videos, Page Reels, Page Reviews, Group Details, Group Posts, Group Posts Search, Post Comments, Search Posts, Search Pages, Search Videos, Search Events, Search Locations |
-| **Instagram** | Search Posts, Search Users, User Profile, User Posts, Post Details |
+| **Instagram** | Search Posts, Search Users, User Profile, User Posts, Post Details, User Followers, User Following, User Stories, User Highlights, Highlight Stories, Post Comments, Comment Replies, Post Likes, Hashtag Posts |
 | **TikTok** | Search Videos, Search Users, User Profile, Video Details |
 | **YouTube** | Search Videos, Search Channels, Channel Details, Video Details, Video Comments |
 | **Reddit** | Search Posts, Search Comments, Search Users |
@@ -64,6 +64,7 @@ Requires n8n 1.94.0 or later. Developed and tested against n8n 1.x (2026).
 
 ## Version history
 
+- **0.3.0** — Nine new Instagram operations: User Followers, User Following, User Stories, User Highlights, Highlight Stories, Post Comments, Comment Replies, Post Likes, Hashtag Posts.
 - **0.2.0** — New Amazon resource: Product Search, Product Details, Seller Profile, Seller Reviews, Seller Products, and Best Sellers across 24 marketplaces.
 - **0.1.3** — Codex metadata fixes requested by n8n review (fully-qualified node identifier, valid category names).
 - **0.1.2** — Audit fixes: AI Mode now uses POST (supports full 12k-char prompts), Facebook sort options are dropdowns, clearer TikTok publish-time labels, neutral defaults for optional filters, corrected billing wording.

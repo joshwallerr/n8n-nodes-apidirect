@@ -1,0 +1,95 @@
+// This file is auto-generated from the API Direct endpoint catalog.
+// Do not edit by hand.
+import type { INodeProperties } from 'n8n-workflow';
+
+export const instagramHashtagPostsFields: INodeProperties[] = [
+	{
+		displayName: "Hashtag",
+		name: "hashtag",
+		type: "string",
+		default: "",
+		description: "Hashtag, with or without the leading # (max 100 characters), e.g. summer",
+		routing: {
+			send: {
+				type: "query",
+				property: "hashtag",
+			},
+		},
+		required: true,
+		displayOptions: {
+			show: {
+				resource: ["instagram"],
+				operation: ["hashtagPosts"],
+			},
+		},
+	},
+	{
+		displayName: "Additional Fields",
+		name: "additionalFields",
+		type: "collection",
+		placeholder: "Add Field",
+		default: {
+		},
+		displayOptions: {
+			show: {
+				resource: ["instagram"],
+				operation: ["hashtagPosts"],
+			},
+		},
+		options: [
+			{
+				displayName: "Get Sentiment",
+				name: "getSentiment",
+				type: "boolean",
+				default: false,
+				description: "Whether to add AI emotion analysis (dominant emotion, polarity, intensity) to each result. Adds $0.001 per page.",
+				routing: {
+					send: {
+						type: "query",
+						property: "get_sentiment",
+					},
+				},
+			},
+			{
+				displayName: "Pages",
+				name: "pages",
+				type: "number",
+				default: 1,
+				description: "Number of pages to fetch, 1-10 (default: 1). Each page adds up to about 30 posts (repeats across pages are removed). Each page fetched is billed as one request.",
+				routing: {
+					send: {
+						type: "query",
+						property: "pages",
+					},
+				},
+			},
+			{
+				displayName: "Sort By",
+				name: "sortBy",
+				type: "options",
+				options: [
+					{
+						name: "Recent",
+						value: "recent",
+					},
+					{
+						name: "Reels",
+						value: "reels",
+					},
+					{
+						name: "Top",
+						value: "top",
+					},
+				],
+				default: "top",
+				description: "Hashtag tab: top (default), recent (newest first), or reels (Reels only)",
+				routing: {
+					send: {
+						type: "query",
+						property: "sort_by",
+					},
+				},
+			},
+		],
+	},
+];
