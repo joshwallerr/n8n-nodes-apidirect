@@ -42,7 +42,7 @@ export const facebookSearchPagesFields: INodeProperties[] = [
 				name: "pages",
 				type: "number",
 				default: 1,
-				description: "Number of pages to fetch (1-10, default 1). Billed per page. Each page fetched is billed as one request.",
+				description: "Number of pages to fetch (1-15, default 1). Billed per page. Each page fetched is billed as one request.",
 				routing: {
 					send: {
 						type: "query",

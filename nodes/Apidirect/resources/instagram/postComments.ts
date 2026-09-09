@@ -73,7 +73,7 @@ export const instagramPostCommentsFields: INodeProperties[] = [
 				name: "pages",
 				type: "number",
 				default: 1,
-				description: "Number of pages to fetch, 1-10 (default: 1). Each page returns up to 15 comments. Each page fetched is billed as one request.",
+				description: "Number of pages to fetch, 1-20 (default: 1). Each page returns up to 15 comments. Each page fetched is billed as one request.",
 				routing: {
 					send: {
 						type: "query",

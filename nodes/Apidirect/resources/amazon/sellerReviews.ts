@@ -68,7 +68,7 @@ export const amazonSellerReviewsFields: INodeProperties[] = [
 				name: "page",
 				type: "number",
 				default: 1,
-				description: "Page number, 1-20 (default: 1)",
+				description: "Page number, 1-50 (default: 1)",
 				routing: {
 					send: {
 						type: "query",

@@ -2,24 +2,24 @@
 // Do not edit by hand.
 import type { INodeProperties } from 'n8n-workflow';
 
-export const twitterTweetRetweetsFields: INodeProperties[] = [
+export const trustpilotUserFields: INodeProperties[] = [
 	{
-		displayName: "Tweet ID",
-		name: "tweetId",
+		displayName: "User ID",
+		name: "userId",
 		type: "string",
 		default: "",
-		description: "Numeric tweet ID",
+		description: "Reviewer ID (24 hex characters, a review's author_id) or a trustpilot.com/users/... URL.",
 		routing: {
 			send: {
 				type: "query",
-				property: "tweet_id",
+				property: "user_id",
 			},
 		},
 		required: true,
 		displayOptions: {
 			show: {
-				resource: ["twitter"],
-				operation: ["tweetRetweets"],
+				resource: ["trustpilot"],
+				operation: ["user"],
 			},
 		},
 	},
@@ -32,21 +32,21 @@ export const twitterTweetRetweetsFields: INodeProperties[] = [
 		},
 		displayOptions: {
 			show: {
-				resource: ["twitter"],
-				operation: ["tweetRetweets"],
+				resource: ["trustpilot"],
+				operation: ["user"],
 			},
 		},
 		options: [
 			{
-				displayName: "Pages",
-				name: "pages",
+				displayName: "Page",
+				name: "page",
 				type: "number",
 				default: 1,
-				description: "Number of pages to fetch, 1-20 (default: 1). Each page fetched is billed as one request.",
+				description: "Page number, 1-500 (default: 1). Each page returns up to 20 reviews.",
 				routing: {
 					send: {
 						type: "query",
-						property: "pages",
+						property: "page",
 					},
 				},
 			},

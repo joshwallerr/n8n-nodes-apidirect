@@ -15,6 +15,7 @@ import { threadsDescription } from './resources/threads';
 import { truthsocialDescription } from './resources/truthsocial';
 import { tiktokDescription } from './resources/tiktok';
 import { amazonDescription } from './resources/amazon';
+import { trustpilotDescription } from './resources/trustpilot';
 import { googleDescription } from './resources/google';
 
 // Platform names, including brand names like Threads that read as plurals
@@ -26,6 +27,7 @@ const resourceOptions: INodePropertyOptions[] = [
 	{ name: "Reddit", value: "reddit" },
 	{ name: "Threads", value: "threads" },
 	{ name: "TikTok", value: "tiktok" },
+	{ name: "Trustpilot", value: "trustpilot" },
 	{ name: "Truth Social", value: "truthsocial" },
 	{ name: "Twitter", value: "twitter" },
 	{ name: "YouTube", value: "youtube" },
@@ -71,6 +73,7 @@ export class Apidirect implements INodeType {
 			...truthsocialDescription,
 			...tiktokDescription,
 			...amazonDescription,
+			...trustpilotDescription,
 			...googleDescription,
 		],
 	};

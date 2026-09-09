@@ -68,7 +68,7 @@ export const googleForumPostsFields: INodeProperties[] = [
 				name: "page",
 				type: "number",
 				default: 1,
-				description: "Page number for pagination (default: 1)",
+				description: "Page number, 1-10 (default: 1). 10 posts per page.",
 				routing: {
 					send: {
 						type: "query",

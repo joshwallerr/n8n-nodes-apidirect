@@ -20,7 +20,7 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 
 ## Operations
 
-One node, ten resources, 73 operations:
+One node, eleven resources, 80 operations:
 
 | Resource | Operations |
 |---|---|
@@ -33,6 +33,7 @@ One node, ten resources, 73 operations:
 | **Threads** | Search Posts, Search Users, User Profile, User Posts |
 | **Truth Social** | User Posts |
 | **Amazon** | Product Search, Product Details, Seller Profile, Seller Reviews, Seller Products, Best Sellers |
+| **Trustpilot** | Company Reviews, Company Search, Category Companies, Category Newest, Category Details, Category Search, User Profile |
 | **Google** | Web Search, AI Mode, News Articles, Forum Posts, Places Search, Place Details, Place Reviews, Place Photos |
 
 Most list operations also support an optional AI sentiment analysis field (`Get Sentiment`) that adds emotion, polarity, and intensity scores to each result.
@@ -64,6 +65,7 @@ Requires n8n 1.94.0 or later. Developed and tested against n8n 1.x (2026).
 
 ## Version history
 
+- **0.4.0** — New Trustpilot resource: Company Reviews, Company Search, Category Companies, Category Newest, Category Details, Category Search, and User Profile. Page caps updated to match the API.
 - **0.3.0** — Nine new Instagram operations: User Followers, User Following, User Stories, User Highlights, Highlight Stories, Post Comments, Comment Replies, Post Likes, Hashtag Posts.
 - **0.2.0** — New Amazon resource: Product Search, Product Details, Seller Profile, Seller Reviews, Seller Products, and Best Sellers across 24 marketplaces.
 - **0.1.3** — Codex metadata fixes requested by n8n review (fully-qualified node identifier, valid category names).

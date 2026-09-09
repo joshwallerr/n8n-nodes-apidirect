@@ -55,7 +55,7 @@ export const redditPostsFields: INodeProperties[] = [
 				name: "page",
 				type: "number",
 				default: 1,
-				description: "Page number, 1-5 (default: 1)",
+				description: "Page number, 1-12 (default: 1). 20 posts per page.",
 				routing: {
 					send: {
 						type: "query",

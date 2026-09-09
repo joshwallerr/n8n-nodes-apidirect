@@ -60,7 +60,7 @@ export const instagramUserFollowersFields: INodeProperties[] = [
 				name: "pages",
 				type: "number",
 				default: 1,
-				description: "Number of pages to fetch, 1-20 (default: 1). Each page returns up to 50 followers. Each page fetched is billed as one request.",
+				description: "Number of pages to fetch, 1-40 (default: 1). Each page returns up to 50 followers. Each page fetched is billed as one request.",
 				routing: {
 					send: {
 						type: "query",

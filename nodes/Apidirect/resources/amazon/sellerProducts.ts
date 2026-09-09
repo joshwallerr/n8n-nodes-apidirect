@@ -55,7 +55,7 @@ export const amazonSellerProductsFields: INodeProperties[] = [
 				name: "page",
 				type: "number",
 				default: 1,
-				description: "Page number, 1-20 (default: 1). Each page returns ~16 results.",
+				description: "Page number, 1-50 (default: 1). Each page returns ~16 results.",
 				routing: {
 					send: {
 						type: "query",
