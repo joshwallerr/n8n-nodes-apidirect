@@ -2,13 +2,13 @@
 // Do not edit by hand.
 import type { INodeProperties } from 'n8n-workflow';
 
-export const instagramUserFollowersFields: INodeProperties[] = [
+export const blueskyUserFollowersFields: INodeProperties[] = [
 	{
 		displayName: "Username",
 		name: "username",
 		type: "string",
 		default: "",
-		description: "Instagram username, with or without leading @ (max 100 characters). Provide exactly one of: Username, URL.",
+		description: "Bluesky handle, e.g. bsky.app, with or without leading @, or the account's DID (max 100 characters). Provide exactly one of: Username, URL.",
 		routing: {
 			send: {
 				type: "query",
@@ -17,7 +17,7 @@ export const instagramUserFollowersFields: INodeProperties[] = [
 		},
 		displayOptions: {
 			show: {
-				resource: ["instagram"],
+				resource: ["bluesky"],
 				operation: ["userFollowers"],
 			},
 		},
@@ -27,7 +27,7 @@ export const instagramUserFollowersFields: INodeProperties[] = [
 		name: "url",
 		type: "string",
 		default: "",
-		description: "Instagram profile URL, e.g. https://instagram.com/natgeo (max 500 characters). Provide exactly one of: Username, URL.",
+		description: "Bluesky profile URL, e.g. https://bsky.app/profile/bsky.app (max 500 characters). Provide exactly one of: Username, URL.",
 		routing: {
 			send: {
 				type: "query",
@@ -36,7 +36,7 @@ export const instagramUserFollowersFields: INodeProperties[] = [
 		},
 		displayOptions: {
 			show: {
-				resource: ["instagram"],
+				resource: ["bluesky"],
 				operation: ["userFollowers"],
 			},
 		},
@@ -50,7 +50,7 @@ export const instagramUserFollowersFields: INodeProperties[] = [
 		},
 		displayOptions: {
 			show: {
-				resource: ["instagram"],
+				resource: ["bluesky"],
 				operation: ["userFollowers"],
 			},
 		},
@@ -60,24 +60,11 @@ export const instagramUserFollowersFields: INodeProperties[] = [
 				name: "pages",
 				type: "number",
 				default: 1,
-				description: "Number of pages to fetch, 1-40 (default: 1). Each page returns up to 50 followers; verified accounts return the first page only. Each page fetched is billed as one request.",
+				description: "Number of pages to fetch, 1-20 (default: 1). Each page returns up to 50 accounts; you are billed per page returned.",
 				routing: {
 					send: {
 						type: "query",
 						property: "pages",
-					},
-				},
-			},
-			{
-				displayName: "Query",
-				name: "query",
-				type: "string",
-				default: "",
-				description: "Optional keyword to search this user's followers by username or name (max 100 characters). Returns up to 50 matches in a single request; pages is ignored.",
-				routing: {
-					send: {
-						type: "query",
-						property: "query",
 					},
 				},
 			},

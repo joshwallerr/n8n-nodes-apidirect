@@ -20,7 +20,7 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 
 ## Operations
 
-One node, eleven resources, 80 operations:
+One node, twelve resources, 92 operations:
 
 | Resource | Operations |
 |---|---|
@@ -32,6 +32,7 @@ One node, eleven resources, 80 operations:
 | **Reddit** | Search Posts, Search Comments, Search Users |
 | **Threads** | Search Posts, Search Users, User Profile, User Posts |
 | **Truth Social** | User Posts |
+| **Bluesky** | Search Posts, Search Users, User Profile, User Posts, User Followers, User Following, User Likes, Post Details, Post Comments, Post Likes, Post Quotes, Post Reposts |
 | **Amazon** | Product Search, Product Details, Seller Profile, Seller Reviews, Seller Products, Best Sellers |
 | **Trustpilot** | Company Reviews, Company Search, Category Companies, Category Newest, Category Details, Category Search, User Profile |
 | **Google** | Web Search, AI Mode, News Articles, Forum Posts, Places Search, Place Details, Place Reviews, Place Photos |
@@ -65,6 +66,7 @@ Requires n8n 1.94.0 or later. Developed and tested against n8n 1.x (2026).
 
 ## Version history
 
+- **0.5.0** — New Bluesky resource: Search Posts, Search Users, User Profile, User Posts, User Followers, User Following, User Likes, Post Details, Post Comments, Post Likes, Post Quotes, and Post Reposts. Instagram User Followers description updated to match the API.
 - **0.4.0** — New Trustpilot resource: Company Reviews, Company Search, Category Companies, Category Newest, Category Details, Category Search, and User Profile. Page caps updated to match the API.
 - **0.3.0** — Nine new Instagram operations: User Followers, User Following, User Stories, User Highlights, Highlight Stories, Post Comments, Comment Replies, Post Likes, Hashtag Posts.
 - **0.2.0** — New Amazon resource: Product Search, Product Details, Seller Profile, Seller Reviews, Seller Products, and Best Sellers across 24 marketplaces.

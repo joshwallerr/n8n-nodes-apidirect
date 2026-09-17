@@ -13,6 +13,7 @@ import { youtubeDescription } from './resources/youtube';
 import { instagramDescription } from './resources/instagram';
 import { threadsDescription } from './resources/threads';
 import { truthsocialDescription } from './resources/truthsocial';
+import { blueskyDescription } from './resources/bluesky';
 import { tiktokDescription } from './resources/tiktok';
 import { amazonDescription } from './resources/amazon';
 import { trustpilotDescription } from './resources/trustpilot';
@@ -21,6 +22,7 @@ import { googleDescription } from './resources/google';
 // Platform names, including brand names like Threads that read as plurals
 const resourceOptions: INodePropertyOptions[] = [
 	{ name: "Amazon", value: "amazon" },
+	{ name: "Bluesky", value: "bluesky" },
 	{ name: "Facebook", value: "facebook" },
 	{ name: "Google", value: "google" },
 	{ name: "Instagram", value: "instagram" },
@@ -71,6 +73,7 @@ export class Apidirect implements INodeType {
 			...instagramDescription,
 			...threadsDescription,
 			...truthsocialDescription,
+			...blueskyDescription,
 			...tiktokDescription,
 			...amazonDescription,
 			...trustpilotDescription,
